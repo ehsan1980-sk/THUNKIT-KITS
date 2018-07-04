@@ -1,11 +1,2 @@
-*.lss
-*.bin
-*.elf
-*.hex
-*.eep
-*.map
-*.o
-*.d
-*.sym
 .*
 !/.gitignore
