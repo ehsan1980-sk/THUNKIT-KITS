@@ -1,6 +1,6 @@
-update=Mon 07 Aug 2017 11:09:05 PM EDT
+update=Sat 14 Jul 2018 10:19:28 PM EDT
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -58,9 +58,9 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/cameron/Desktop/ELECTRONICS PROJECTS/A7 GPS GSM/LIB/A7
-LibName31=/home/cameron/Desktop/ELECTRONICS PROJECTS/A7 GPS GSM/LIB/sn74lvc1g3157dckr
-LibName32=/home/cameron/Desktop/ELECTRONICS PROJECTS/A7 GPS GSM/LIB/0786463001
-LibName33=/home/cameron/Desktop/ELECTRONICS PROJECTS/A7 GPS GSM/LIB/push_sw
-LibName34=/home/cameron/Desktop/ELECTRONICS PROJECTS/A7 GPS GSM/LIB/mcp73831t
-LibName35=/home/cameron/Desktop/ELECTRONICS PROJECTS/A7 GPS GSM/LIB/mic5504-2
+LibName30=LIB/mic5504-2
+LibName31=LIB/push_sw
+LibName32=LIB/mcp73831t
+LibName33=LIB/sn74lvc1g3157dckr
+LibName34=LIB/0786463001
+LibName35=LIB/A7
