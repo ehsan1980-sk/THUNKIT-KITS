@@ -1,11 +1,11 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.5+dfsg1-4)
 
   (general
-    (links 0)
-    (no_connects 106)
+    (links 534)
+    (no_connects 309)
     (area 105.456667 55.176 206.963334 146.246)
     (thickness 1.6)
-    (drawings 333)
+    (drawings 334)
     (tracks 360)
     (zones 0)
     (modules 184)
@@ -6741,6 +6741,9 @@
       (solder_mask_margin 0.77) (clearance 0.77))
   )
 
+  (gr_text "HASL Pb FREE\n1.6mm FR4\nRED SOLDERMASK\nTHUNKIT ELECTRONICS" (at 166.624 143.256) (layer F.SilkS)
+    (effects (font (size 0.6 0.75) (thickness 0.15)) (justify left))
+  )
   (gr_line (start 203.835 140.716) (end 108.585 140.716) (layer Eco1.User) (width 0.2))
   (gr_line (start 108.585 131.826) (end 203.835 131.826) (layer Eco1.User) (width 0.2))
   (gr_line (start 203.835 122.936) (end 108.585 122.936) (layer Eco1.User) (width 0.2))
