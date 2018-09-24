@@ -28,65 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:3solderjumper
-LIBS:3solderjumper (copy)
-LIBS:74hc164
-LIBS:74hc164 (copy)
-LIBS:74hc595
-LIBS:74hc595 (copy)
-LIBS:74hc595pw
-LIBS:74hc595PW
-LIBS:74hc595pw (copy)
-LIBS:74hc595PW (copy)
-LIBS:10118192-0001LF
-LIBS:10118192-0001LF (copy)
-LIBS:0786463001
-LIBS:0786463001 (copy)
-LIBS:A7
-LIBS:A7 (copy)
-LIBS:ATMEGA32U2 DEV
-LIBS:ATMEGA32U2 DEV (copy)
-LIBS:attiny43u-m
-LIBS:attiny43u-m (copy)
-LIBS:attiny43u-m-fixed
-LIBS:attiny43u-m-fixed (copy)
-LIBS:attiny43u-m-qfn
-LIBS:attiny43u-m-qfn (copy)
-LIBS:bmp280
-LIBS:bmp280 (copy)
-LIBS:BMP280
-LIBS:BMP280 (copy)
-LIBS:FT230XQ
-LIBS:FT230XQ (copy)
-LIBS:mcp2221a
-LIBS:mcp2221a (copy)
-LIBS:mcp73831t
-LIBS:mcp73831t (copy)
-LIBS:mic5504
-LIBS:mic5504-2
-LIBS:mic5504-2 (copy)
-LIBS:mic5504 (copy)
-LIBS:MPL3115A2
-LIBS:MPL3115A2 (copy)
-LIBS:push_sw
-LIBS:push_sw (copy)
-LIBS:S2B-ZR-SM4A-TF
-LIBS:S2B-ZR-SM4A-TF (copy)
-LIBS:sn74aup1g79
-LIBS:sn74aup1g80
-LIBS:sn74aup1g80 (copy)
-LIBS:sn74lvc1g3157dckr
-LIBS:sn74lvc1g3157dckr (copy)
-LIBS:spi_eeprom
-LIBS:spi_eeprom (copy)
-LIBS:spst
-LIBS:spst (copy)
-LIBS:stm32l052k6u6
-LIBS:stm32l052k6u6 (copy)
-LIBS:xc9140a331mr-g
-LIBS:xc9140a331mr-g (copy)
-LIBS:xc9140a331mr-g_fixed
-LIBS:xc9140a331mr-g_fixed (copy)
 LIBS:KEY-cache
 EELAYER 25 0
 EELAYER END
@@ -318,7 +259,7 @@ L SN74AUP1G79 U1
 U 1 1 5B887286
 P 6250 3850
 F 0 "U1" H 6450 4100 60  0000 C CNN
-F 1 "SN74AUP1G79" H 6250 3550 60  0000 C CNN
+F 1 "SN74LVC1G79" H 6250 3550 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6000 4200 60  0001 C CNN
 F 3 "" H 6000 4200 60  0001 C CNN
 	1    6250 3850
