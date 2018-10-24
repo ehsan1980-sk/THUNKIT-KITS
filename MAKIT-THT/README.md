@@ -3,6 +3,7 @@
 Thunkit Electronics sells electronic kits for hobbyists and engineers alike. Available at [thunkitelectronics.com](https://thunkitelectronics.com/category.html?page=development) and [Tindie](https://www.tindie.com/stores/cmccaskey). All designs are open source with schematics, board layouts, code, and BOMs freely available.
 
 ## Description ###
+
 ![image goes here](IMAGES/MAKIT-THT_1.png)
 The MAKIT-THT is an Arduino Uno compatible board that uses only through-hole components making it a perfect soldering kit. This kit is a perfect gateway into the world of electronics. Unlike some other soldering kits, the MAKIT-THT is more than just a novelty, it is a tool for continued electronics and programming learning.
 
