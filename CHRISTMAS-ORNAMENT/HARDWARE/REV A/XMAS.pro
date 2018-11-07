@@ -1,4 +1,4 @@
-update=Sat 27 Oct 2018 09:48:12 PM EDT
+update=Tue 21 Nov 2017 01:59:51 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=/home/cameron/Desktop/ELECTRONICS PROJECTS/HARDWARE/CHRISTMAS ORNAMENT/LIB/MCP6541T-I_LT
+LibName31=/home/cameron/Desktop/ELECTRONICS PROJECTS/HARDWARE/CHRISTMAS ORNAMENT/LIB/push_sw

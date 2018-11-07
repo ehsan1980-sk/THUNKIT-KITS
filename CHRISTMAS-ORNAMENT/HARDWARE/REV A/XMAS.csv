@@ -1,0 +1,11 @@
+"Designator";"Package";"Quantity";"Designation";"Supplier and ref"
+"BT1";"CR2032HARWIN";1;"CR2032";
+"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18";"LED_0603";18;"LED";
+"C1,C2";"C_0603";2;"C";
+"P1";"2.54 ICSP";1;"ICSP";
+"R1,R2,R3,R8";"R_0603";4;"R";
+"R7";"SMT_PHOTORESISTOR";1;"R_PHOTO";
+"RV1";"Potentiometer_Trimmer-EVM3E";1;"POT";
+"SW1";"JS102011JAQN_NO_DRILL";1;"Push_SW";
+"U1";"SOT-23-5";1;"MCP6541T-I/LT";
+"U2";"QFN-20-1EP_4x4mm_Pitch0.5mm";1;"ATTINY24A-M";
