@@ -15,7 +15,7 @@ The T85DUINO uses the ATtiny85 as the main microconroller. The ATtiny85 is flash
 
 The T85DUINO runs directly off of 3V from a CR1025 battery. While this is enough to blink the on-board LED, it is posible to brown out the microcontroller if the external connections on the board are used without consideration to this fact.
 
-Since the T85DUINO runs at 3V, the schematic is simlified, and the board only requiring the 68 Ohm termination resistors for USB instead of the termination resistors and zener diodes to limit the USB data line voltages.
+Since the T85DUINO runs at 3V, the board only requires the 68 Ohm termination resistors for USB and doesn't require the zener diodes to limit the USB data line voltages.
 
 The T85DUINO has an on-board LED that can be blinked to emulate the famous Blink Arduino Sketch.
 
