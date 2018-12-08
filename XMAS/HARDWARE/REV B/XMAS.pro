@@ -1,4 +1,4 @@
-update=Tue 21 Nov 2017 01:59:51 PM EST
+update=Sat 24 Nov 2018 10:19:04 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,13 @@ LibName28=contrib
 LibName29=valves
 LibName30=/home/cameron/Desktop/ELECTRONICS PROJECTS/HARDWARE/CHRISTMAS ORNAMENT/LIB/MCP6541T-I_LT
 LibName31=/home/cameron/Desktop/ELECTRONICS PROJECTS/HARDWARE/CHRISTMAS ORNAMENT/LIB/push_sw
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

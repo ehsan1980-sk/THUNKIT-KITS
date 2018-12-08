@@ -4,8 +4,16 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
+#include <avr/wdt.h>
 
-void light(int pin){
+#define WDT_SETTINGS WDTCSR |= ((1 << WDCE) | (1 << WDE) | (1 << WDP0) | (1 << WDP3)) //enable WDT 8.0s
+#define WDT_ENABLE WDTCSR |= (1 << WDIE)
+
+#define LIGHT_INT_FLAG_CLR GIFR |= (1 << INTF0)
+#define LIGHT_INT_ENABLE GIMSK |= (1 << INT0)
+#define LIGHT_INT_DISABLE GIMSK &= ~(1 << INT0)
+
+void light(char pin){
  	PORTB &= ~((1 << PB0) | (1 << PB1));
 	PORTA &=  ~((1 << PA0) | (1 << PA1) | (1 << PA2) | (1 << PA3));
   PORTA |= ((1 << PA5) | (1 << PA6) | (1 << PA7));
@@ -85,9 +93,42 @@ void light(int pin){
 	}
 }
 
+void sleep(void){
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+  sleep_mode();
+}
+
+void WDTenable(void){
+  wdt_reset();
+  WDT_SETTINGS;
+  WDT_ENABLE;
+}
+
+#define lightDelayCycles 3
+volatile char lightDelay = 0;
+
+ISR(WDT_vect) {
+  cli();
+  WDT_ENABLE; //pg41 prevent reset
+  light(0); //turn off the lights!
+  if (lightDelay < lightDelayCycles){ //just less than one minute (8 seconds * (6 + 1) cycles = 56 seconds)
+    lightDelay ++;
+  } else {
+    LIGHT_INT_FLAG_CLR;
+    LIGHT_INT_ENABLE;
+    wdt_reset();
+    wdt_disable();
+  }
+  sei();
+  sleep();
+}
+
 ISR(INT0_vect) {
   cli();
-	int i;
+  LIGHT_INT_FLAG_CLR;
+  LIGHT_INT_DISABLE;
+  lightDelay = 0;
+	char i;
 	for (i = 1; i <= 18; i ++){
 		light(i);
 		_delay_ms(10);
@@ -106,15 +147,10 @@ ISR(INT0_vect) {
 		light(0);
 		_delay_ms(10);
 	}
-	/*for (i = 17; i > 0; i --){
-		light(i);
-		_delay_ms(50);
-	}*/
-	light(0);
-	_delay_ms(30000);
+	light(0); //turn off the lights!
+  WDTenable();
   sei();
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-  sleep_mode();
+  sleep();
 }
 
 int main() {
@@ -124,13 +160,12 @@ int main() {
 	PORTB &= ~((1 << PB0) | (1 << PB1));
 	PORTA &=  ~(1 << PA0) | (1 << PA1) | (1 << PA2) | (1 << PA3);
   PORTA |= ((1 << PA5) | (1 << PA6) | (1 << PA7));
-	MCUCR &= ((1 << ISC00) | (1 << ISC01));
-  GIMSK |= (1 << INT0);
+	MCUCR &= ~((1 << ISC00) | (1 << ISC01));
+  LIGHT_INT_ENABLE;
+  //WDTenable();
   sei();
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-  sleep_mode();
-
+  sleep();
   while (1) {
-		//do nothing
+    //do nothing
   }
 }
